@@ -1,3 +1,4 @@
+- [Topo](#topo)
 # htaccess
 Uma coleção de snippets .htaccess, úteis para segurança e otimização de sites.
 
@@ -327,7 +328,6 @@ ErrorDocument 500 http://exemplo.com.br/index.php
 ```
 
 ### Força a utilização de UTF-8
-
 ``` apacheconf
 # Use codificação UTF-8 para qualquer coisa como text/plain ou text/html
 AddDefaultCharset utf-8
@@ -335,3 +335,4 @@ AddDefaultCharset utf-8
 # Força UTF-8 para um número de formatos de arquivo
 AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 ```
+### Topo
