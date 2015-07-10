@@ -23,7 +23,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Proíbe que outros tipos de arquivos sejam utilizados como index](#proíbe-que-outros-tipos-de-arquivos-sejam-utilizados-como-index)
     - [Proíbe a exibição de certos arquivos de configuração](#proíbe-a-exibição-de-certos-arquivos-de-configuração)
     - [Código para neutralizar URLs falsas](#código-para-neutralizar-urls-falsas)
-    - [Ativa mod_rewrite](#ativa-mod-rewrite)
+    - [Filtro contra XSS](#filtro-contra-xss)
     - [Filtro contra phpshell shell script](#filtro-contra-phpshell-shell-script)
     - [Filtro contra a injeção de códigos no MySQL, RFI, base64, etc](#filtro-contra-a-injecao-de-codigos-no-mysql-rfi-base-64-etc)
     - [Proteção dedicada exclusivamente a SQL Injection](#protecao-dedicada-exclusivamente-a-sql-Injection)
