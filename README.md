@@ -20,7 +20,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Desativar pesquisa nos diretórios dos sites](#desativar-pesquisa-nos-diretórios-dos-sites)
     - [O arquivo index php vai ser o padrão do diretório raiz](#o-arquivo-index-php-vai-ser-o-padrão-do-diretório-raiz)
     - [Proíbe que outros tipos de arquivos sejam utilizados como index](#proíbe-que-outros-tipos-de-arquivos-sejam-utilizados-como-index)
-    - [Proíbe a exibição de certos arquivos de configuração como login, config, adm](#proíbe-a-exibição-de-certos-arquivos-de-configuração-como-login,-config,-adm)
+    - [Proíbe a exibição de certos arquivos de configuração](#proíbe-a-exibição-de-certos-arquivos-de-configuração)
     - [Código para neutralizar URLs falsas](#codigo-para-neutralizar-urls-falsas)
     - [Ativa modd_rewrite, também funciona como filtro contra XSS, redirecionamento HTTP, base64_encode, injeção sql simples](#ativa-mod-rewrite-tambem-funciona-como-filtro-contra-xss-redirecionamento-http-base-64-encode-injecao-sql-simples)
     - [Filtro contra phpshell.php, RemoteView, C99.php, r57.php, etc](#filtro-contra-phpshell-php-remoteview-C99-php-r57-php-etc)
