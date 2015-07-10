@@ -28,8 +28,8 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Filtro contra RFI](#filtro-contra-rfi)
     - [Proteção dedicada exclusivamente a SQL Injection](#proteção-dedicada-exclusivamente-a-sql-injection)
     - [Protege contra ataque DOS limitando o tamanho de upload de arquivos](#protege-contra-ataque-dos-limitando-o-tamanho-de-upload-de-arquivos)
-- [Otimização](#otimizacao)
-    - [Força a compressão de arquivos a serem enviados para o navegador](#força-a-compressao-de-arquivos-a-serem-enviados-para-o-navegador)
+- [Otimização](#otimização)
+    - [Força a compressão de arquivos a serem enviados para o navegador](#força-a-compressão-de-arquivos-a-serem-enviados-para-o-navegador)
     - [Força a utilização do Cache-Control e Expires Header no navegador](#força-a-utilização-do-cache-control-e-expires-header-no-navegador)
     - [Controle do Cache-Control e Expires Header no navegador](#controle-do-cache-control-e-expires-header-no-navegador)
     - [Desativar Turn eTags Off](#desativar-turn-etags-off)
@@ -202,7 +202,7 @@ LimitRequestBody 10240000
 ```
 
 ## Otimização
-### Compressão de texto, arquivos
+### Força a compressão de arquivos a serem enviados para o navegador
 ``` apacheconf
 <IfModule mod_deflate.c>
     <IfModule mod_setenvif.c>
