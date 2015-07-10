@@ -26,8 +26,8 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Filtro contra XSS](#filtro-contra-xss)
     - [Filtro contra phpshell shell script](#filtro-contra-phpshell-shell-script)
     - [Filtro contra RFI](#filtro-contra-rfi)
-    - [Proteção dedicada exclusivamente a SQL Injection](#protecao-dedicada-exclusivamente-a-sql-Injection)
-    - [Protege contra ataque DOS, limitando o tamanho de upload de arquivos](#protege-contra-ataque-dos-limitando-o-tamanho-de-upload-de-arquivos)
+    - [Proteção dedicada exclusivamente a SQL Injection](#proteção-dedicada-exclusivamente-a-sql-Injection)
+    - [Protege contra ataque DOS limitando o tamanho de upload de arquivos](#protege-contra-ataque-dos-limitando-o-tamanho-de-upload-de-arquivos)
 - [Otimização](#otimizacao)
     - [Força a compressão de arquivos a serem enviados para o navegador](#força-a-compressao-de-arquivos-a-serem-enviados-para-o-navegador)
     - [Força a utilização do Cache-Control e Expires Header no navegador](#força-a-utilização-do-cache-control-e-expires-header-no-navegador)
@@ -106,7 +106,7 @@ RedirectMatch gone ^[-_a-z0-9/\.]*//.*
 RedirectMatch gone ^.*/etc/passwd.*
 ```
 
-### Fuiltro contra XSS
+### Filtro contra XSS
 ``` bash
 # Ativa mod_rewrite, também funciona como filtro contra XSS, redirecionamento HTTP, base64, injeção sql simples
 RewriteEngine on
@@ -196,7 +196,7 @@ RewriteRule ^.*sp_password.*$    - [R=404,L,NC]
 RewriteRule ^.*%20xp_.*$         - [R=404,L,NC]
 ```
 
-### Protege contra ataque DOS, limitando o tamanho de upload de arquivos
+### Protege contra ataque DOS limitando o tamanho de upload de arquivos
 ``` apacheconf
 LimitRequestBody 10240000
 ```
