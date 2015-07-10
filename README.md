@@ -22,8 +22,8 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Tipo de extensão padrão da página index no diretório raiz](#tipo-de-extensão-padrão-da-página-index-no-diretório-raiz)
     - [Proíbe a exibição de certos arquivos de configuração](#proíbe-a-exibição-de-certos-arquivos-de-configuração)
     - [Código para neutralizar URLs falsas](#código-para-neutralizar-urls-falsas)
-    - [Ativa mod_rewrite, também funciona como filtro contra XSS, redirecionamento, base64, injeção sql](#ativa-mod-rewrite-também-funciona-como-filtro-contra-xss-redirecionamento-base64-injeção-sql)
-    - [Filtro contra phpshell.php, RemoteView, C99.php, r57.php, etc](#filtro-contra-phpshell-php-remoteview-C99-php-r57-php-etc)
+    - [Ativa mod_rewrite](#aiva-mod-rewrite)
+    - [Filtro contra phpshell shell script](#filtro-contra-phpshell-shell-script)
     - [Filtro contra a injeção de códigos no MySQL, RFI, base64, etc](#filtro-contra-a-injecao-de-codigos-no-mysql-rfi-base-64-etc)
     - [Proteção dedicada exclusivamente a SQL Injection](#protecao-dedicada-exclusivamente-a-sql-Injection)
     - [Protege contra ataque DOS, limitando o tamanho de upload de arquivos](#protege-contra-ataque-dos-limitando-o-tamanho-de-upload-de-arquivos)
@@ -105,7 +105,8 @@ RedirectMatch gone ^[-_a-z0-9/\.]*//.*
 RedirectMatch gone ^.*/etc/passwd.*
 ```
 
-### Ativa mod_rewrite, também funciona como filtro contra XSS, redirecionamento, base64, injeção sql
+### Ativa mod_rewrite
+# Ativa mod_rewrite, também funciona como filtro contra XSS, redirecionamento HTTP, base64, injeção sql simples
 ``` bash
 RewriteEngine on
 RewriteCond %{REQUEST_METHOD} (GET|POST) [NC]
@@ -124,7 +125,7 @@ RewriteCond %{QUERY_STRING} ^(.*)(SELECT(%20|\+)|UNION(%20|\+)ALL|INSERT(%20|\+)
 RewriteRule (.*) - [F]
 ```
 
-### Filtro contra phpshell.php, RemoteView, C99.php, r57.php, etc
+### Filtro contra phpshell shell script
 ``` bash
 RewriteEngine On
 RewriteCond %{REQUEST_URI} .*((php|my)?shell|remview.*|phpremoteview.*|sshphp.*|pcom|nstview.*|c99|r57|webadmin.*|phpget.*|phpwriter.*|fileditor.*|locus7.*|storm7.*)\.(p?s?x?htm?l?|txt|aspx?|cfml?|cgi|pl|php[3-9]{0,1}|jsp?|sql|xml) [NC,OR]
