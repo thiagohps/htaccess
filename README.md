@@ -25,7 +25,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Código para neutralizar URLs falsas](#código-para-neutralizar-urls-falsas)
     - [Filtro contra XSS](#filtro-contra-xss)
     - [Filtro contra phpshell shell script](#filtro-contra-phpshell-shell-script)
-    - [Filtro contra a injeção de códigos no MySQL, RFI, base64, etc](#filtro-contra-a-injecao-de-codigos-no-mysql-rfi-base-64-etc)
+    - [Filtro contra RFI](#filtro-contra-rfi)
     - [Proteção dedicada exclusivamente a SQL Injection](#protecao-dedicada-exclusivamente-a-sql-Injection)
     - [Protege contra ataque DOS, limitando o tamanho de upload de arquivos](#protege-contra-ataque-dos-limitando-o-tamanho-de-upload-de-arquivos)
 - [Otimização](#otimizacao)
@@ -128,6 +128,7 @@ RewriteRule (.*) - [F]
 
 ### Filtro contra phpshell shell script
 ``` bash
+# Filtro contra phpshell.php, RemoteView, C99.php, r57.php, etc
 RewriteEngine On
 RewriteCond %{REQUEST_URI} .*((php|my)?shell|remview.*|phpremoteview.*|sshphp.*|pcom|nstview.*|c99|r57|webadmin.*|phpget.*|phpwriter.*|fileditor.*|locus7.*|storm7.*)\.(p?s?x?htm?l?|txt|aspx?|cfml?|cgi|pl|php[3-9]{0,1}|jsp?|sql|xml) [NC,OR]
 RewriteCond %{REQUEST_METHOD} (GET|POST) [NC]
@@ -149,8 +150,9 @@ RewriteCond %{QUERY_STRING} ^(.*)(wget|shell_exec|passthru|system|exec|popen|pro
 RewriteRule (.*) - [F]
 ```
 
-### Filtro contra a injeção de códigos no MySQL, RFI, base64, etc
+### Filtro contra RFI
 ``` apacheconf
+# Filtro contra a injeção de códigos no MySQL, RFI, base64, etc
 RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=http:// [OR]
 RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=(\.\.//?)+ [OR]
 RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC,OR]
