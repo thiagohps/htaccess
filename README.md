@@ -18,7 +18,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
 - [Segurança](#segurança)
     - [Proteção do arquivo .htaccess](#proteção-do-arquivo-htaccess)
     - [Desativar pesquisa nos diretórios dos sites](#desativar-pesquisa-nos-diretórios-dos-sites)
-    - [O arquivo index.php vai ser o padrão do diretório raiz](#o-arquivo-index-php-vai-ser-o-padrão-do-diretório-raiz)
+    - [O arquivo index.php vai ser o padrão do diretório raiz](#o-arquivo-index.php-vai-ser-o-padrão-do-diretório-raiz)
     - [Proíbe que outros tipos de arquivos sejam utilizados como index](#proibe-que-outros-tipos-de-arquivos-sejam-utilizados-como-index)
     - [Proíbe a exibição de certos arquivos de configuração como login, config, adm](#proibe-a-exibicao-de-certos-arquivos-de-configuracao-como-login-config-adm)
     - [Código para neutralizar URLs falsas](#codigo-para-neutralizar-urls-falsas)
