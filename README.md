@@ -21,7 +21,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [O arquivo index php vai ser o padrão do diretório raiz](#o-arquivo-index-php-vai-ser-o-padrão-do-diretório-raiz)
     - [Tipo de extensão padrão da página index no diretório raiz](#tipo-de-extensão-padrão-da-página-index-no-diretório-raiz)
     - [Proíbe a exibição de certos arquivos de configuração](#proíbe-a-exibição-de-certos-arquivos-de-configuração)
-    - [Código para neutralizar URLs falsas](#código-para-neutralizar-URLs-falsas)
+    - [Código para neutralizar URLs falsas](#código-para-neutralizar-urls-falsas)
     - [Ativa mod_rewrite, também funciona como filtro contra XSS, redirecionamento, base64, injeção sql](#ativa-mod_rewrite,-também-funciona-como-filtro-contra-XSS,-redirecionamento,-base64,-injeção-sql)
     - [Filtro contra phpshell.php, RemoteView, C99.php, r57.php, etc](#filtro-contra-phpshell-php-remoteview-C99-php-r57-php-etc)
     - [Filtro contra a injeção de códigos no MySQL, RFI, base64, etc](#filtro-contra-a-injecao-de-codigos-no-mysql-rfi-base-64-etc)
