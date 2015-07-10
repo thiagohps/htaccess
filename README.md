@@ -33,9 +33,9 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Força a utilização do Cache-Control e Expires Header no navegador](#força-a-utilização-do-cache-control-e-expires-header-no-navegador)
     - [Controle do Cache-Control e Expires Header no navegador](#controle-do-cache-control-e-expires-header-no-navegador)
     - [Desativar Turn eTags Off](#desativar-turn-etags-off)
-- [Códigos Variados](#codigos-variados)
-    - [Páginas de error personalizadas](#paginas-de-error-personalizadas)
-    - [Força a utilização de UTF-8](#força-a-utilização-de-ut-8)
+- [Códigos Variados](#códigos-variados)
+    - [Páginas de error personalizadas](#páginas-de-error-personalizadas)
+    - [Força a utilização de UTF-8](#força-a-utilização-de-utf-8)
 
 ## Rewrite and Redirection
 Nota: Módulo mod_rewrite deve estar instalado e habilitado.
