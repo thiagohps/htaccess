@@ -106,7 +106,7 @@ RedirectMatch gone ^[-_a-z0-9/\.]*//.*
 RedirectMatch gone ^.*/etc/passwd.*
 ```
 
-### Ativa mod_rewrite
+### Fuiltro contra XSS
 ``` bash
 # Ativa mod_rewrite, também funciona como filtro contra XSS, redirecionamento HTTP, base64, injeção sql simples
 RewriteEngine on
