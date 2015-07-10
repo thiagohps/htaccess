@@ -16,7 +16,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Bloqueio contra softwares que baixam páginas do site para navegação off-line](#bloqueio-contra-softwares-que-baixam-páginas-do-site-para-navegacao-off-line)
     - [Bloqueio contra alguns tipos de requisição gerado por robôs](#bloqueio-contra-alguns-tipos-de-requisicao-gerado-por-robôs)
 - [Segurança](#segurança)
-    - [Proteção do arquivo .htaccess](#proteção-do-arquivo-.htaccess)
+    - [Proteção do arquivo .htaccess](#proteção-do-arquivo-htaccess)
     - [Desativar pesquisa nos diretórios dos sites](#desativar-pesquisa-nos-diretorios-dos-sites)
     - [O arquivo index.php vai ser o padrão do diretório raiz](#o-arquivo-index-php-vai-ser-o-padrao-do-diretorio-raiz)
     - [Proíbe que outros tipos de arquivos sejam utilizados como index](#proibe-que-outros-tipos-de-arquivos-sejam-utilizados-como-index)
