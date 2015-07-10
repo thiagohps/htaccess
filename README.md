@@ -1,4 +1,5 @@
-- [Topo](#topo)
+### Topo
+
 # htaccess
 Uma coleção de snippets .htaccess, úteis para segurança e otimização de sites.
 
@@ -335,4 +336,5 @@ AddDefaultCharset utf-8
 # Força UTF-8 para um número de formatos de arquivo
 AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 ```
-### Topo
+
+- [Topo](#topo)
