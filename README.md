@@ -19,7 +19,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Proteção do arquivo .htaccess](#proteção-do-arquivo-htaccess)
     - [Desativar pesquisa nos diretórios dos sites](#desativar-pesquisa-nos-diretórios-dos-sites)
     - [O arquivo index php vai ser o padrão do diretório raiz](#o-arquivo-index-php-vai-ser-o-padrão-do-diretório-raiz)
-    - [Proíbe que outros tipos de arquivos sejam utilizados como index](#proíbe-que-outros-tipos-de-arquivos-sejam-utilizados-como-index)
+    - [Tipo de extensão padrão da página index no diretório raiz](#tipo-de-extensão-padrão-da-página-index-no-diretório-raiz)
     - [Proíbe a exibição de certos arquivos de configuração](#proíbe-a-exibição-de-certos-arquivos-de-configuração)
     - [Código para neutralizar URLs falsas](#codigo-para-neutralizar-urls-falsas)
     - [Ativa modd_rewrite, também funciona como filtro contra XSS, redirecionamento HTTP, base64_encode, injeção sql simples](#ativa-mod-rewrite-tambem-funciona-como-filtro-contra-xss-redirecionamento-http-base-64-encode-injecao-sql-simples)
@@ -75,8 +75,9 @@ deny from all
 Options All -Indexes
 ```
 
-### O arquivo index.php vai ser o padrão do diretório raiz
+### Tipo de extensão padrão da página index no diretório raiz
 ``` apacheconf
+# Aqui você pode escolher qual vai ser o tipo do arquivpo index na raiz do seu site exemplo: index.php, index.asp, index.html, index.htm
 DirectoryIndex index.php
 ```
 
