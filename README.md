@@ -1,9 +1,6 @@
 # htaccess
 Uma coleção de snippets .htaccess, úteis para segurança e otimização de sites.
 
-# .htaccess Snippets
-A collection of useful .htaccess snippets, all in one place.
-
 **OBSERVAÇÃO**: ao deixar cair o trecho em um arquivo .htaccess é a maior parte do tempo suficiente, há casos em que algumas modificações podem ser necessárias. Use por sua conta e risco.
 
 **IMPORTANTE**: Apache 2.4 introduz algumas alterações significativas, principalmente na configuração de controle de acesso. Para mais informações, consulte o upgrading document.
