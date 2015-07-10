@@ -1,6 +1,6 @@
-## Topo
+# Topo
 
-# htaccess
+## htaccess
 Uma coleção de snippets .htaccess, úteis para segurança e otimização de sites.
 
 **OBSERVAÇÃO**: ao deixar cair o trecho em um arquivo .htaccess é a maior parte do tempo suficiente, há casos em que algumas modificações podem ser necessárias. Use por sua conta e risco.
