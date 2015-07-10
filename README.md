@@ -12,7 +12,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
 ## Conteúdo
 - [Rewrite and Redirection](#rewrite-and-redirection)
     - [Ativa mod_rewrite](#ativa-mod_rewrite)
-    - [Exceção de tipos de arquivos que robôs podem acessar](#exceçao-de-tipos-de-arquivos-que-robos-podem-acessar)
+    - [Exceção de tipos de arquivos que robôs podem acessar](#exceçõo-de-tipos-de-arquivos-que-robôs-podem-acessar)
     - [Bloqueio contra softwares que baixam páginas do site para navegação off-line](#bloqueio-contra-softwares-que-baixam-paginas-do-site-para-navegacao-off-line)
     - [Bloqueio contra alguns tipos de requisição gerado por robôs](#bloqueio-contra-alguns-tipos-de-requisicao-gerado-por-robos)
 - [Segurança](#seguranca)
