@@ -26,7 +26,7 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Filtro contra XSS](#filtro-contra-xss)
     - [Filtro contra phpshell shell script](#filtro-contra-phpshell-shell-script)
     - [Filtro contra RFI](#filtro-contra-rfi)
-    - [Proteção dedicada exclusivamente a SQL Injection](#proteção-dedicada-exclusivamente-a-sql-Injection)
+    - [Proteção dedicada exclusivamente a SQL Injection](#proteção-dedicada-exclusivamente-a-sql-injection)
     - [Protege contra ataque DOS limitando o tamanho de upload de arquivos](#protege-contra-ataque-dos-limitando-o-tamanho-de-upload-de-arquivos)
 - [Otimização](#otimizacao)
     - [Força a compressão de arquivos a serem enviados para o navegador](#força-a-compressao-de-arquivos-a-serem-enviados-para-o-navegador)
