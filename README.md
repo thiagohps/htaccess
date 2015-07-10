@@ -107,8 +107,8 @@ RedirectMatch gone ^.*/etc/passwd.*
 ```
 
 ### Ativa mod_rewrite
-# Ativa mod_rewrite, também funciona como filtro contra XSS, redirecionamento HTTP, base64, injeção sql simples
 ``` bash
+# Ativa mod_rewrite, também funciona como filtro contra XSS, redirecionamento HTTP, base64, injeção sql simples
 RewriteEngine on
 RewriteCond %{REQUEST_METHOD} (GET|POST) [NC]
 RewriteCond %{QUERY_STRING} ^(.*)(%3C|<)/?script(.*)$ [NC,OR]
