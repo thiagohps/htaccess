@@ -17,8 +17,8 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Bloqueio contra alguns tipos de requisição gerado por robôs](#bloqueio-contra-alguns-tipos-de-requisição-gerado-por-robôs)
 - [Segurança](#segurança)
     - [Proteção do arquivo .htaccess](#proteção-do-arquivo-htaccess)
-    - [Desativar pesquisa nos diretórios dos sites](#desativar-pesquisa-nos-diretorios-dos-sites)
-    - [O arquivo index.php vai ser o padrão do diretório raiz](#o-arquivo-index-php-vai-ser-o-padrao-do-diretorio-raiz)
+    - [Desativar pesquisa nos diretórios dos sites](#desativar-pesquisa-nos-diretórios-dos-sites)
+    - [O arquivo index.php vai ser o padrão do diretório raiz](#o-arquivo-index.php-vai-ser-o-padrão-do-diretório-raiz)
     - [Proíbe que outros tipos de arquivos sejam utilizados como index](#proibe-que-outros-tipos-de-arquivos-sejam-utilizados-como-index)
     - [Proíbe a exibição de certos arquivos de configuração como login, config, adm](#proibe-a-exibicao-de-certos-arquivos-de-configuracao-como-login-config-adm)
     - [Código para neutralizar URLs falsas](#codigo-para-neutralizar-urls-falsas)
@@ -50,7 +50,7 @@ RewriteCond %{REQUEST_URI} !^/robots.txt
 RewriteCond %{REQUEST_URI} !^/sitemap.xml
 ```
 
-### Bloqueio contra softwares que baixam páginas do site para navegação off-line
+### Bloqueio contra softwares que baixam páginas do site
 ``` apacheconf
 RewriteCond %{HTTP_USER_AGENT} ^-?$ [OR] 
 ```
@@ -88,7 +88,7 @@ deny from all
 </Files>
 ```
 
-### Proíbe a exibição de certos arquivos de configuração como login, config, adm
+### Proíbe a exibição de certos arquivos de configuração
 ``` apacheconf
 <Files ~ "^(install?|admin|(wp-)?config(\.inc)?|configure|configuration|login|logging|options?\.inc|option|settings?(\.inc)?|functions?(\.inc)?|setup(\.inc)?|default|home|main|errors?|members?|hacke?r?d?|[-_a-z0-9.]*mafia[-_a-z0-9.]*|[-_a-z0-9.]*power[-_a-z0-9.]*|[-_a-z0-9.]*jihad[-_a-z0-9.]*|php|shell|ssh|root|cmd|[0-9]{1,6}|test|data)\.(p?s?x?htm?l?|txt|aspx?|cfml?|cgi|pl|php[3-9]{0,1}|jsp?|sql|xml)$">
 order allow,deny
