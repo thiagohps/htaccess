@@ -239,16 +239,13 @@ LimitRequestBody 10240000
 </ifModule>
 
 #------------------------------------------------------------------------------
-# Força os navegadores a confiar no Cache-Control e Expires Header
+# Força a utilização do Cache-Control e Expires Header no navegador
 #------------------------------------------------------------------------------
 <IfModule mod_headers.c>
     Header unset ETag
 </IfModule>
 FileETag None
 
-#------------------------------------------------------------------------------
-# Força a utilização do Cache-Control e Expires Header no navegador
-#------------------------------------------------------------------------------
 <IfModule mod_expires.c>
     ExpiresActive on
     ExpiresDefault                                      "access plus 1 month"
