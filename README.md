@@ -34,7 +34,6 @@ O que estamos fazendo aqui é principalmente a coleta de trechos de códigos út
     - [Força a compressão de arquivos a serem enviados para o navegador](#força-a-compressão-de-arquivos-a-serem-enviados-para-o-navegador)
     - [Força a utilização do Cache-Control e Expires Header no navegador](#força-a-utilização-do-cache-control-e-expires-header-no-navegador)
     - [Controle do Cache-Control e Expires Header no navegador](#controle-do-cache-control-e-expires-header-no-navegador)
-    - [Desativar Turn eTags Off](#desativar-turn-etags-off)
 - [Códigos Variados](#códigos-variados)
     - [Páginas de error personalizadas](#páginas-de-error-personalizadas)
     - [Força a utilização de UTF-8](#força-a-utilização-de-utf-8)
@@ -239,6 +238,12 @@ LimitRequestBody 10240000
 
 ### Força a utilização do Cache-Control e Expires Header no navegador
 ``` apacheconf
+# Ao remover o cabeçalho `ETag`, você desativar caches e navegadores de ser capaz de validar os arquivos, então eles são forçados a confiar em seu` Cache-Control` e `cabeçalho Expires`.
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
+
 <IfModule mod_expires.c>
     ExpiresActive on
     ExpiresDefault                                      "access plus 1 month"
@@ -306,15 +311,6 @@ LimitRequestBody 10240000
     Header set Cache-Control "private, must-revalidate"
   </filesMatch>
 </ifModule>
-```
-
-### Desativar Turn eTags Off
-Ao remover o cabeçalho `ETag`, você desativar caches e navegadores de ser capaz de validar os arquivos, então eles são forçados a confiar em seu` Cache-Control` e `cabeçalho Expires`.
-``` apacheconf
-<IfModule mod_headers.c>
-    Header unset ETag
-</IfModule>
-FileETag None
 ```
 
 ## Códigos Variados
