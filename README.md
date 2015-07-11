@@ -238,7 +238,8 @@ LimitRequestBody 10240000
 
 ### Força a utilização do Cache-Control e Expires Header no navegador
 ``` apacheconf
-# Ao remover o cabeçalho `ETag`, você desativar caches e navegadores de ser capaz de validar os arquivos, então eles são forçados a confiar em seu` Cache-Control` e `cabeçalho Expires`.
+# Ao remover o cabeçalho `ETag`, você desativar caches e navegadores de ser capaz de validar os arquivos, 
+então eles são forçados a confiar em seu` Cache-Control` e `cabeçalho Expires`.
 <IfModule mod_headers.c>
     Header unset ETag
 </IfModule>
