@@ -9,11 +9,11 @@ deny from all
 #------------------------------------------------------------------------------
 # Páginas de error personalizadas
 #------------------------------------------------------------------------------
-ErrorDocument 400 http://transformandoaweb.com.br/index.php
-ErrorDocument 401 http://transformandoaweb.com.br/index.php
-ErrorDocument 403 http://transformandoaweb.com.br/index.php
-ErrorDocument 404 http://transformandoaweb.com.br/index.php
-ErrorDocument 500 http://transformandoaweb.com.br/index.php
+ErrorDocument 400 http://exemplo.com.br/index.php
+ErrorDocument 401 http://exemplo.com.br/index.php
+ErrorDocument 403 http://exemplo.com.br/index.php
+ErrorDocument 404 http://exemplo.com.br/index.php
+ErrorDocument 500 http://exemplo.com.br/index.php
 
 #------------------------------------------------------------------------------
 # Use codificação UTF-8 para qualquer coisa como text/plain ou text/html
